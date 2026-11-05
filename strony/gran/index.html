@@ -1,0 +1,1068 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Grań Odzież Górska</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Grań szyje w Nowym Targu odzież do biegania i chodzenia po górach. Merino, bawełna organiczna, wysyłka w 24 h i 2 lata darmowej naprawy.">
+<meta property="og:title" content="Grań · Odzież do biegania po górach, szyta w Nowym Targu">
+<meta property="og:description" content="Merino, które nie gryzie, i szwy, które naprawiamy za darmo przez 2 lata.">
+<meta property="og:image" content="og-image.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#FCFBF8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2317251E'/%3E%3Cpolygon points='3,25 11,12 15,18 21,7 29,25' fill='%23FCFBF8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500&display=swap">
+<style>
+/* Układ: katalog z drukarni. Zdjęcie na całą szerokość z wielkim nagłówkiem, pod nim gęsta, spokojna siatka produktów na tle „mgły”.
+   Paleta: czerń Nike zamieniona na świerkową ciemną zieleń, biel na ciepłą biel, szarość na mgłę.
+   Jedyne mocne kolory to znaki szlaków PTTK (czerwony, niebieski, zielony, żółty, czarny) i cena promocyjna. */
+:root {
+  --ink: #17251E;            /* świerk, zastępuje #111111 */
+  --ink-hover: #2B3D33;
+  --on-ink: #FFFFFF;
+  --canvas: #FCFBF8;         /* ciepła biel */
+  --mgla: #EFEDE6;           /* mgła, zastępuje soft-cloud #f5f5f5 */
+  --mgla-hover: #E4E1D8;
+  --charcoal: #333B36;
+  --mute: #646A63;
+  --stone: #A2A69E;
+  --hairline: #CDC9BE;
+  --hairline-soft: #E3E0D7;
+  --sale: #C3301B;
+  --success: #1F7A47;
+  --scrim: rgba(23, 37, 30, 0.42);
+  --szlak-czerwony: #D2321E;
+  --szlak-niebieski: #1E5DBA;
+  --szlak-zielony: #1F8A4C;
+  --szlak-zolty: #F1C21B;
+  --szlak-czarny: #17251E;
+  --szlak-bialy: #FFFFFF;
+
+  --font-display: "Anton", "Impact", "Arial Narrow", sans-serif;
+  --font-ui: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --s-2: 2px; --s-4: 4px; --s-8: 8px; --s-12: 12px; --s-18: 18px; --s-24: 24px; --s-30: 30px; --s-48: 48px; --s-96: 96px;
+  --r-md: 24px; --r-pill: 30px; --r-full: 9999px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --gutter: 16px;
+  color-scheme: light;
+}
+@media (min-width: 960px) { :root { --gutter: 48px; } }
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--canvas); color: var(--ink);
+  font-family: var(--font-ui); font-size: 16px; line-height: 1.5;
+  -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility;
+}
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--canvas); }
+img { max-width: 100%; display: block; }
+[hidden] { display: none !important; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { text-wrap: balance; }
+p { text-wrap: pretty; }
+:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+/* ---------- Style tekstu (z DESIGN.md) ---------- */
+.t-display { font-family: var(--font-display); font-weight: 400; font-size: 48px; line-height: 0.9; text-transform: uppercase; letter-spacing: -0.005em; }
+@media (min-width: 640px) { .t-display { font-size: 64px; } }
+@media (min-width: 1024px) { .t-display { font-size: 96px; } }
+.t-h-xl { font-size: 24px; line-height: 1.2; font-weight: 500; letter-spacing: -0.01em; }
+@media (min-width: 640px) { .t-h-xl { font-size: 32px; } }
+.t-h-lg { font-size: 24px; line-height: 1.2; font-weight: 500; letter-spacing: -0.01em; }
+.t-h-md { font-size: 16px; line-height: 1.75; font-weight: 500; }
+.t-body { font-size: 16px; line-height: 1.5; font-weight: 400; }
+.t-body-strong { font-size: 16px; line-height: 1.5; font-weight: 500; }
+.t-btn { font-size: 16px; line-height: 1.5; font-weight: 500; }
+.t-btn-sm { font-size: 14px; line-height: 1.5; font-weight: 500; }
+.t-cap { font-size: 14px; line-height: 1.5; font-weight: 500; }
+.t-cap-sm { font-size: 12px; line-height: 1.5; font-weight: 500; }
+.t-util { font-size: 12px; line-height: 1.75; font-weight: 400; }
+.t-tagline { font-size: 30px; line-height: 1.1; font-weight: 500; letter-spacing: -0.02em; }
+@media (min-width: 640px) { .t-tagline { font-size: 48px; } }
+.mute { color: var(--mute); }
+
+/* ---------- Układ ---------- */
+.wrap {
+  width: 100%; max-width: 1440px; margin-inline: auto;
+  padding-left: max(var(--gutter), env(safe-area-inset-left, 0px));
+  padding-right: max(var(--gutter), env(safe-area-inset-right, 0px));
+}
+.section { padding-block: var(--s-48); }
+.sec-head { display: flex; align-items: end; justify-content: space-between; gap: var(--s-12) var(--s-24); flex-wrap: wrap; margin-bottom: var(--s-24); }
+.sec-head > * { min-width: 0; }
+.skip { position: absolute; left: var(--s-8); top: -100px; z-index: 100; background: var(--ink); color: var(--on-ink); padding: var(--s-8) var(--s-18); border-radius: var(--r-pill); text-decoration: none; }
+.skip:focus { top: var(--s-8); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- Przyciski ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--s-8);
+  min-height: 48px; padding: 12px 30px; border-radius: var(--r-pill); border: 0; cursor: pointer;
+  text-decoration: none; white-space: nowrap;
+  transition: background-color 300ms var(--ease), transform 300ms var(--ease), opacity 300ms var(--ease);
+}
+.btn:active { transform: scale(0.97); }
+.btn-primary { background: var(--ink); color: var(--on-ink); }
+.btn-primary:hover { background: var(--ink-hover); }
+.btn-secondary { background: var(--mgla); color: var(--ink); }
+.btn-secondary:hover { background: var(--mgla-hover); }
+.btn-on-image { background: var(--canvas); color: var(--ink); min-height: 40px; padding: 8px 24px; }
+.btn-on-image:hover { background: var(--mgla); }
+.btn[disabled] { opacity: 0.4; cursor: not-allowed; transform: none; }
+.icon-btn {
+  width: 40px; height: 40px; border-radius: var(--r-full); border: 0; background: transparent; color: var(--ink);
+  display: inline-grid; place-items: center; cursor: pointer; position: relative; flex: none;
+  transition: background-color 300ms var(--ease), transform 300ms var(--ease);
+}
+.icon-btn:hover { background: var(--mgla); }
+.icon-btn:active { transform: scale(0.94); }
+.icon-btn svg { width: 24px; height: 24px; }
+svg.i { fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+.chip {
+  display: inline-flex; align-items: center; gap: var(--s-8); min-height: 40px; padding: 8px 18px;
+  border-radius: var(--r-pill); border: 1px solid var(--hairline); background: var(--canvas); color: var(--ink);
+  cursor: pointer; white-space: nowrap; transition: background-color 300ms var(--ease), border-color 300ms var(--ease), color 300ms var(--ease);
+}
+.chip:hover { border-color: var(--ink); }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--on-ink); border-color: var(--ink); }
+.chip svg { width: 16px; height: 16px; }
+
+/* ---------- Znak szlaku PTTK ---------- */
+.marker { display: inline-grid; grid-template-rows: 1fr 1fr 1fr; width: 30px; height: 21px; flex: none; box-shadow: 0 0 0 1px rgba(23,37,30,0.12); }
+.marker::before, .marker::after { content: ""; background: var(--szlak-bialy); }
+.marker > i { background: var(--c); }
+
+/* ---------- Pasek usług i nawigacja ---------- */
+.utility { background: var(--mgla); }
+.utility .wrap { display: flex; align-items: center; justify-content: space-between; gap: var(--s-18); min-height: 36px; }
+.utility nav { display: flex; gap: var(--s-12); }
+.utility a { text-decoration: none; }
+.utility a:hover { text-decoration: underline; }
+.utility .hide-sm, .utility nav { display: none; }
+.utility .wrap { justify-content: center; }
+@media (min-width: 640px) { .utility .hide-sm { display: inline; } .utility nav { display: flex; } .utility .wrap { justify-content: space-between; } }
+
+.nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 40; background: var(--canvas); box-shadow: inset 0 -1px 0 var(--hairline-soft); }
+.nav .wrap { display: flex; align-items: center; gap: var(--s-12); height: 60px; }
+.logo { display: inline-flex; align-items: center; gap: var(--s-8); text-decoration: none; color: var(--ink); flex: none; }
+.logo svg { width: 32px; height: 24px; fill: currentColor; }
+.logo span { font-family: var(--font-display); font-size: 24px; line-height: 1; letter-spacing: 0.02em; }
+.nav-links { display: none; gap: var(--s-4); margin-inline: auto; }
+.nav-links a { position: relative; text-decoration: none; padding: var(--s-8) var(--s-12); }
+.nav-links a::after { content: ""; position: absolute; left: var(--s-12); right: var(--s-12); bottom: 2px; height: 2px; background: var(--ink); transform: scaleX(0); transform-origin: left; transition: transform 500ms var(--ease); }
+.nav-links a:hover::after, .nav-links a[aria-current="true"]::after { transform: scaleX(1); }
+.nav-right { display: flex; align-items: center; gap: var(--s-4); margin-left: auto; }
+.search { position: relative; display: none; }
+.search svg { position: absolute; left: 10px; top: 50%; translate: 0 -50%; width: 20px; height: 20px; pointer-events: none; }
+.search input {
+  width: 200px; height: 40px; border-radius: var(--r-md); border: 2px solid transparent; background: var(--mgla);
+  padding: 0 var(--s-18) 0 40px; font: inherit; font-size: 16px; color: var(--ink);
+  transition: background-color 300ms var(--ease), border-color 300ms var(--ease), box-shadow 300ms var(--ease);
+}
+.search input::placeholder { color: var(--mute); }
+.search input:hover { background: var(--mgla-hover); }
+.search input:focus { outline: none; background: var(--canvas); border-color: var(--ink); box-shadow: 0 0 0 6px var(--mgla); }
+.badge-count {
+  position: absolute; right: 2px; top: 2px; min-width: 18px; height: 18px; padding: 0 5px; border-radius: var(--r-full);
+  background: var(--ink); color: var(--on-ink); font-size: 12px; line-height: 18px; font-weight: 500; text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+.menu-btn span { position: absolute; left: 10px; width: 20px; height: 1.5px; background: currentColor; transition: transform 500ms var(--ease), opacity 300ms var(--ease); }
+.menu-btn span:nth-child(1) { transform: translateY(-4px); }
+.menu-btn span:nth-child(2) { transform: translateY(4px); }
+.menu-btn[aria-expanded="true"] span:nth-child(1) { transform: rotate(45deg); }
+.menu-btn[aria-expanded="true"] span:nth-child(2) { transform: rotate(-45deg); }
+.search-btn { display: inline-grid; }
+.nav .mobile-search { display: none; height: auto; padding-bottom: var(--s-12); }
+.nav .mobile-search.open { display: block; }
+.mobile-search .search { display: block; }
+.mobile-search .search input { width: 100%; }
+@media (min-width: 960px) {
+  .nav-links { display: flex; }
+  .menu-btn, .search-btn { display: none; }
+  .nav-right { margin-left: 0; }
+  .nav-right .search { display: block; }
+  .mobile-search { display: none !important; }
+}
+
+/* Szuflada menu (telefon) */
+.drawer {
+  position: fixed; inset: 0; z-index: 70; background: rgba(252, 251, 248, 0.97);
+  backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+  padding: calc(env(safe-area-inset-top, 0px) + 12px) max(var(--gutter), env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 24px) max(var(--gutter), env(safe-area-inset-left, 0px));
+  display: flex; flex-direction: column; gap: var(--s-24);
+  transform: translateX(-100%); transition: transform 500ms var(--ease); visibility: hidden;
+}
+.drawer.open { transform: none; visibility: visible; }
+.drawer-top { display: flex; justify-content: space-between; align-items: center; height: 48px; }
+.drawer nav { display: flex; flex-direction: column; }
+.drawer nav a { font-size: 24px; line-height: 1.2; font-weight: 500; text-decoration: none; padding: var(--s-18) 0; box-shadow: inset 0 -1px 0 var(--hairline-soft); opacity: 0; transform: translateY(24px); }
+.drawer.open nav a { animation: rise 500ms var(--ease) forwards; }
+.drawer.open nav a:nth-child(2) { animation-delay: 60ms; }
+.drawer.open nav a:nth-child(3) { animation-delay: 120ms; }
+.drawer.open nav a:nth-child(4) { animation-delay: 180ms; }
+.drawer.open nav a:nth-child(5) { animation-delay: 240ms; }
+@keyframes rise { to { opacity: 1; transform: none; } }
+
+/* ---------- Hero (kafel kampanii) ---------- */
+.hero { display: grid; background: var(--mgla); }
+.hero-media { grid-area: 1 / 1; }
+.hero-media img { width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 75%; }
+.hero-copy { display: contents; }
+.hero-title { grid-area: 1 / 1; align-self: start; padding-top: var(--s-30); display: flex; flex-direction: column; gap: var(--s-12); }
+.hero-rest { grid-area: 2 / 1; background: var(--canvas); padding-top: var(--s-24); display: flex; flex-direction: column; gap: var(--s-18); align-items: flex-start; }
+.hero .eyebrow { display: inline-flex; align-items: center; gap: var(--s-8); }
+.hero-sub { max-width: 34rem; }
+.hero h1 { padding-bottom: 0.12em; }
+.proof { display: flex; align-items: center; gap: var(--s-8); flex-wrap: wrap; }
+.stars { color: var(--ink); letter-spacing: 1px; }
+@media (min-width: 640px) {
+  .hero-media img { aspect-ratio: 3 / 2; object-position: 50% 50%; }
+}
+@media (min-width: 960px) {
+  .hero-media img { aspect-ratio: auto; height: clamp(600px, 50vw, 780px); }
+  .hero-copy { display: flex; flex-direction: column; gap: var(--s-24); grid-area: 1 / 1; align-self: start; padding-block: var(--s-48);
+    width: 100%; max-width: 1440px; margin-inline: auto; padding-left: max(var(--gutter), env(safe-area-inset-left, 0px)); padding-right: max(var(--gutter), env(safe-area-inset-right, 0px)); }
+  .hero-title, .hero-rest { padding: 0; margin: 0; background: none; max-width: 680px; }
+}
+
+/* Pasek obietnic */
+.promises { box-shadow: inset 0 -1px 0 var(--hairline-soft); }
+.promises ul { list-style: none; margin: 0; padding-block: var(--s-18); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-12) var(--s-24); }
+.promises li { display: flex; align-items: center; gap: var(--s-8); min-width: 0; }
+.promises svg { width: 20px; height: 20px; flex: none; }
+@media (min-width: 960px) { .promises ul { grid-template-columns: repeat(4, auto); justify-content: space-between; } }
+
+/* ---------- Kolekcja ---------- */
+.filters { display: flex; gap: var(--s-8); overflow-x: auto; padding: 2px; margin: -2px -2px var(--s-24); scrollbar-width: none; }
+.filters::-webkit-scrollbar { display: none; }
+.grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-30) var(--s-8); }
+@media (min-width: 600px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1024px) { .grid { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.card { display: flex; flex-direction: column; gap: var(--s-12); min-width: 0; }
+.card-img { position: relative; background: var(--mgla); aspect-ratio: 1 / 1; overflow: hidden; }
+.card-img img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; transition: transform 500ms var(--ease), opacity 500ms var(--ease); opacity: 0; }
+.card-img img.ok { opacity: 1; }
+.card:hover .card-img img { transform: scale(1.03); }
+.card-img::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent); transform: translateX(-100%); animation: shimmer 1.4s var(--ease) infinite; }
+.card-img.loaded::before { display: none; }
+@keyframes shimmer { to { transform: translateX(100%); } }
+.card-img .badge { position: absolute; left: var(--s-12); top: var(--s-12); }
+.badge { display: inline-flex; align-items: center; padding: 4px 12px; border-radius: var(--r-pill); background: var(--canvas); border: 1px solid var(--hairline); color: var(--ink); }
+.card-img .fav { position: absolute; right: var(--s-8); top: var(--s-8); background: var(--canvas); }
+.card-img .fav:hover { background: var(--mgla); }
+.card-img .fav[aria-pressed="true"] svg { fill: var(--ink); }
+.card-img .add { position: absolute; right: var(--s-8); bottom: var(--s-8); background: var(--ink); color: var(--on-ink); }
+.card-img .add:hover { background: var(--ink-hover); }
+.card-meta { display: flex; flex-direction: column; gap: var(--s-4); }
+.swatches { display: flex; gap: var(--s-8); margin-bottom: var(--s-4); }
+.swatch { width: 16px; height: 16px; border-radius: var(--r-full); border: 0; padding: 0; cursor: pointer; background: var(--c); box-shadow: inset 0 0 0 1px rgba(23,37,30,0.18); }
+.swatch[aria-pressed="true"] { box-shadow: 0 0 0 2px var(--canvas), 0 0 0 3.5px var(--ink); }
+.price { display: flex; gap: var(--s-8); flex-wrap: wrap; font-variant-numeric: tabular-nums; margin-top: var(--s-4); }
+.price .now-sale { color: var(--sale); }
+.price s { color: var(--mute); }
+.price .off { color: var(--sale); }
+.empty { grid-column: 1 / -1; background: var(--mgla); padding: var(--s-48) var(--s-24); display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-12); }
+
+/* ---------- Hasło ---------- */
+.tagline { padding-block: var(--s-96); }
+.tagline p.t-tagline { max-width: 900px; }
+.tagline .w { color: rgba(23, 37, 30, 0.28); transition: color 600ms var(--ease); }
+.tagline .w.on { color: var(--ink); }
+.tagline .facts { margin-top: var(--s-30); display: flex; gap: var(--s-8) var(--s-24); flex-wrap: wrap; }
+.tagline .facts > span { display: inline-flex; gap: var(--s-8); align-items: center; }
+
+/* ---------- Szlaki ---------- */
+.rail { display: flex; gap: var(--s-8); overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; padding-bottom: var(--s-4); }
+.rail::-webkit-scrollbar { display: none; }
+.trail { flex: 0 0 72%; scroll-snap-align: start; display: flex; flex-direction: column; gap: var(--s-12); min-width: 0; }
+@media (min-width: 600px) { .trail { flex-basis: calc((100% - 16px) / 2.4); } }
+@media (min-width: 1024px) { .trail { flex-basis: calc((100% - 32px) / 5); } }
+.trail-img { position: relative; aspect-ratio: 4 / 5; background: var(--mgla); overflow: hidden; }
+.trail-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 500ms var(--ease); }
+.trail:hover .trail-img img { transform: scale(1.03); }
+.trail-img .marker { position: absolute; left: var(--s-12); top: var(--s-12); }
+.trail-img .btn-on-image { position: absolute; left: var(--s-12); bottom: var(--s-12); }
+
+/* ---------- Korzyści ---------- */
+.perks { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-8); }
+@media (min-width: 960px) { .perks { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.perk { position: relative; aspect-ratio: 4 / 5; max-height: 560px; width: 100%; overflow: hidden; color: var(--on-ink); background: var(--ink); }
+@media (min-width: 600px) and (max-width: 959px) { .perk { aspect-ratio: 16 / 10; } }
+.perk img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.perk::after { content: ""; position: absolute; inset: 0; background: var(--scrim); }
+.perk-copy { position: absolute; left: var(--s-24); right: var(--s-24); bottom: var(--s-24); z-index: 1; display: flex; flex-direction: column; gap: var(--s-12); align-items: flex-start; }
+.perk-copy p { max-width: 30rem; }
+
+/* ---------- Naprawa (3 kroki) ---------- */
+.steps { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 var(--s-24); }
+@media (min-width: 960px) { .steps { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.steps li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--s-18); padding-block: var(--s-24); border-top: 1px solid var(--hairline); }
+.steps .n { font-family: var(--font-display); font-size: 48px; line-height: 0.9; }
+.steps h3 { margin-bottom: var(--s-4); }
+
+/* ---------- Kampania nocna ---------- */
+.campaign { position: relative; background: var(--ink); color: var(--on-ink); overflow: hidden; }
+.campaign img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: 30% 50%; }
+@media (min-width: 640px) { .campaign img { aspect-ratio: 24 / 11; } }
+.campaign-copy { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: space-between; padding-block: var(--s-30); }
+@media (min-width: 960px) { .campaign-copy { padding-block: var(--s-48); } }
+.campaign-copy .top { display: flex; flex-direction: column; gap: var(--s-18); max-width: 680px; }
+
+/* ---------- Opinie ---------- */
+.reviews { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-8); }
+@media (min-width: 960px) { .reviews { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.review { background: var(--mgla); padding: var(--s-24); display: flex; flex-direction: column; gap: var(--s-18); justify-content: space-between; margin: 0; }
+.review blockquote { margin: 0; }
+.review figcaption { display: flex; flex-direction: column; }
+
+/* ---------- Klub ---------- */
+.club { background: var(--mgla); }
+.club .wrap { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-24); padding-block: var(--s-48); }
+@media (min-width: 960px) { .club .wrap { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: start; gap: var(--s-48); } }
+.club-text { display: flex; flex-direction: column; gap: var(--s-12); }
+form.join { display: flex; flex-direction: column; gap: var(--s-12); }
+.field-row { display: flex; gap: var(--s-8); flex-wrap: wrap; }
+.field-row input[type="email"] {
+  flex: 1 1 220px; min-width: 0; height: 48px; border-radius: var(--r-md); border: 2px solid var(--hairline); background: var(--canvas);
+  padding: 0 var(--s-18); font: inherit; font-size: 16px; color: var(--ink); transition: border-color 300ms var(--ease), box-shadow 300ms var(--ease);
+}
+.field-row input[type="email"]:hover { border-color: var(--stone); }
+.field-row input[type="email"]:focus { outline: none; border-color: var(--ink); box-shadow: 0 0 0 6px var(--canvas); }
+.field-row input[aria-invalid="true"] { border-color: var(--sale); }
+.check { display: flex; gap: var(--s-12); align-items: flex-start; cursor: pointer; }
+.check input { width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--ink); flex: none; }
+.err { color: var(--sale); }
+.ok-msg { color: var(--success); display: flex; gap: var(--s-8); align-items: center; }
+.ok-msg svg { width: 20px; height: 20px; flex: none; }
+
+/* ---------- FAQ ---------- */
+.faq-wrap { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--s-24); }
+@media (min-width: 960px) { .faq-wrap { grid-template-columns: minmax(0, 1fr) minmax(0, 2fr); gap: var(--s-48); } }
+.faq-aside { display: flex; flex-direction: column; gap: var(--s-12); align-self: start; }
+@media (min-width: 960px) { .faq-aside { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 96px); } }
+.faq details { border-bottom: 1px solid var(--hairline); }
+.faq details:first-child { border-top: 1px solid var(--hairline); }
+.faq summary { list-style: none; display: flex; justify-content: space-between; align-items: center; gap: var(--s-18); padding-block: var(--s-24); cursor: pointer; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary:hover { text-decoration: underline; text-underline-offset: 4px; }
+.faq summary svg { width: 24px; height: 24px; flex: none; transition: transform 500ms var(--ease); }
+.faq details[open] summary svg { transform: rotate(180deg); }
+.faq .ans { padding-bottom: var(--s-24); max-width: 62ch; color: var(--charcoal); display: flex; flex-direction: column; gap: var(--s-12); }
+.copy-row { display: flex; align-items: center; gap: var(--s-8); flex-wrap: wrap; }
+.copy-row code { font-family: var(--font-ui); font-weight: 500; }
+.link-btn { background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; font-weight: 500; }
+
+/* ---------- Końcowe wezwanie ---------- */
+.final { text-align: left; }
+.final .wrap { display: flex; flex-direction: column; gap: var(--s-18); align-items: flex-start; padding-block: var(--s-96) var(--s-48); }
+.final h2 { max-width: 680px; }
+
+/* ---------- Stopka ---------- */
+footer { border-top: 1px solid var(--hairline); }
+.foot-cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-30) var(--s-24); padding-block: var(--s-48) var(--s-30); }
+@media (min-width: 960px) { .foot-cols { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.foot-cols h2 { margin-bottom: var(--s-12); }
+.foot-cols ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--s-8); color: var(--mute); }
+.foot-cols a { text-decoration: none; }
+.foot-cols a:hover { color: var(--ink); text-decoration: underline; }
+.fine { border-top: 1px solid var(--hairline-soft); padding-block: var(--s-18) var(--s-30); display: flex; flex-wrap: wrap; gap: var(--s-8) var(--s-24); justify-content: space-between; color: var(--mute); }
+.fine nav { display: flex; gap: var(--s-18); flex-wrap: wrap; }
+.fine a:hover { color: var(--ink); }
+
+/* ---------- Koszyk ---------- */
+.overlay { position: fixed; inset: 0; z-index: 80; background: rgba(23, 37, 30, 0.4); opacity: 0; visibility: hidden; transition: opacity 300ms var(--ease), visibility 300ms; }
+.overlay.open { opacity: 1; visibility: visible; }
+.bag {
+  position: fixed; top: 0; right: 0; bottom: 0; z-index: 90; width: min(420px, 100%); background: var(--canvas);
+  display: flex; flex-direction: column; transform: translateX(100%); transition: transform 500ms var(--ease); visibility: hidden;
+  padding: calc(env(safe-area-inset-top, 0px) + 12px) max(var(--s-24), env(safe-area-inset-right, 0px)) calc(env(safe-area-inset-bottom, 0px) + 24px) var(--s-24);
+}
+.bag.open { transform: none; visibility: visible; }
+.bag-head { display: flex; justify-content: space-between; align-items: center; height: 48px; margin-bottom: var(--s-12); }
+.bag-list { list-style: none; margin: 0; padding: 0; flex: 1; overflow-y: auto; display: flex; flex-direction: column; }
+.bag-item { display: grid; grid-template-columns: 72px minmax(0, 1fr) auto; gap: var(--s-12); padding-block: var(--s-12); border-bottom: 1px solid var(--hairline-soft); align-items: start; }
+.bag-item .thumb { width: 72px; height: 72px; background: var(--mgla); }
+.bag-item .thumb img { width: 100%; height: 100%; object-fit: cover; mix-blend-mode: multiply; }
+.qty { display: inline-flex; align-items: center; gap: var(--s-4); margin-top: var(--s-4); }
+.qty button { width: 32px; height: 32px; border-radius: var(--r-full); border: 1px solid var(--hairline); background: var(--canvas); cursor: pointer; }
+.qty button:hover { border-color: var(--ink); }
+.qty span { min-width: 24px; text-align: center; font-variant-numeric: tabular-nums; }
+.bag-foot { display: flex; flex-direction: column; gap: var(--s-12); padding-top: var(--s-18); }
+.bag-row { display: flex; justify-content: space-between; font-variant-numeric: tabular-nums; }
+.bar { height: 4px; background: var(--mgla); border-radius: var(--r-full); overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--szlak-zielony); transform-origin: left; transition: transform 500ms var(--ease); }
+.bag-empty { flex: 1; display: flex; flex-direction: column; gap: var(--s-12); align-items: flex-start; padding-top: var(--s-24); }
+
+/* ---------- Powiadomienia i cookies ---------- */
+.toast {
+  position: fixed; left: 50%; bottom: calc(env(safe-area-inset-bottom, 0px) + 24px); z-index: 95; translate: -50% 0;
+  background: var(--ink); color: var(--on-ink); padding: 12px 24px; border-radius: var(--r-pill); max-width: calc(100% - 32px);
+  opacity: 0; transform: translateY(12px); transition: opacity 300ms var(--ease), transform 500ms var(--ease); pointer-events: none;
+}
+.toast.show { opacity: 1; transform: none; }
+.cookies {
+  position: fixed; z-index: 85; left: max(16px, env(safe-area-inset-left, 0px)); right: max(16px, env(safe-area-inset-right, 0px));
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 16px); max-width: 440px;
+  background: var(--canvas); border: 1px solid var(--hairline); padding: var(--s-18); display: flex; flex-direction: column; gap: var(--s-12);
+}
+.cookies .row { display: flex; gap: var(--s-8); flex-wrap: wrap; }
+.cookies .btn { min-height: 40px; padding: 8px 24px; }
+@media (max-width: 639px) { .cookies { padding: var(--s-12); gap: var(--s-8); } }
+
+/* ---------- Pojawianie się sekcji ---------- */
+.rv.pre { opacity: 0; transform: translateY(32px); }
+.rv { transition: opacity 700ms var(--ease), transform 700ms var(--ease); }
+@media (prefers-reduced-motion: reduce) {
+  .rv, .rv.pre { opacity: 1; transform: none; transition: opacity 300ms linear; }
+  .card-img::before { animation: none; }
+  .drawer nav a { opacity: 1; transform: none; }
+  .drawer.open nav a { animation: none; }
+  *, *::before, *::after { transition-duration: 1ms !important; }
+}
+</style>
+</head>
+<body>
+<a class="skip t-btn-sm" href="#tresc">Przejdź do treści</a>
+
+<!-- Ikony -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-9.3-9.1C1.4 7.7 3.5 4.5 6.8 4.5c2.2 0 3.8 1.3 5.2 3.2 1.4-1.9 3-3.2 5.2-3.2 3.3 0 5.4 3.2 4.1 6.4C19.5 15.4 12 20 12 20z"/></symbol>
+  <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 12.5H6.2L5 8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 6v12M6 12h12"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.8-6.5-11a6.5 6.5 0 0 1 13 0c0 5.2-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.2"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 6.5h11v10h-11zM13.5 10h4l3 3.2v3.3h-7"/><circle cx="6.5" cy="17.5" r="1.7"/><circle cx="17" cy="17.5" r="1.7"/></symbol>
+  <symbol id="i-return" viewBox="0 0 24 24"><path d="M8.5 13.5L4 9l4.5-4.5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 0 11H11"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l7 2.8v5.4c0 4.4-3 7.9-7 9.8-4-1.9-7-5.4-7-9.8V5.8L12 3z"/><path d="M9 12l2.2 2.2L15.5 10"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+</svg>
+
+<div class="utility t-cap-sm">
+  <div class="wrap">
+    <span>Darmowa dostawa od 299&nbsp;zł<span class="hide-sm"> · 30 dni na zwrot</span></span>
+    <nav aria-label="Na skróty">
+      <a href="#sklep">Sklep w Nowym Targu</a>
+      <a href="#faq">Pomoc</a>
+      <a href="#klub">Klub Grani</a>
+    </nav>
+  </div>
+</div>
+
+<header class="nav">
+  <div class="wrap">
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Otwórz menu" aria-expanded="false" aria-controls="drawer"><span></span><span></span></button>
+    <a class="logo" href="#top" aria-label="Grań, strona główna">
+      <svg viewBox="0 0 32 24" aria-hidden="true"><polygon points="0,23 9,9 13,15 20,2 32,23"/></svg>
+      <span>GRAŃ</span>
+    </a>
+    <nav class="nav-links t-body-strong" aria-label="Główna">
+      <a href="#kolekcja" data-spy="kolekcja">Nowości</a>
+      <a href="#szlaki" data-spy="szlaki">Szlaki</a>
+      <a href="#naprawa" data-spy="naprawa">Naprawa</a>
+      <a href="#szwalnia" data-spy="szwalnia">Szwalnia</a>
+      <a href="#faq" data-spy="faq">Pytania</a>
+    </nav>
+    <div class="nav-right">
+      <div class="search" role="search">
+        <svg class="i" aria-hidden="true"><use href="#i-search"/></svg>
+        <label class="sr" for="q">Szukaj w sklepie</label>
+        <input id="q" type="search" placeholder="Szukaj" autocomplete="off">
+      </div>
+      <button class="icon-btn search-btn" id="searchBtn" aria-label="Szukaj" aria-expanded="false" aria-controls="mSearch"><svg class="i"><use href="#i-search"/></svg></button>
+      <button class="icon-btn" id="favBtn" aria-label="Ulubione: 0"><svg class="i"><use href="#i-heart"/></svg><span class="badge-count" id="favCount" hidden>0</span></button>
+      <button class="icon-btn" id="bagBtn" aria-label="Koszyk: 0 produktów" aria-controls="bag" aria-expanded="false"><svg class="i"><use href="#i-bag"/></svg><span class="badge-count" id="bagCount" hidden>0</span></button>
+    </div>
+  </div>
+  <div class="wrap mobile-search" id="mSearch">
+    <div class="search" role="search">
+      <svg class="i" aria-hidden="true"><use href="#i-search"/></svg>
+      <label class="sr" for="qm">Szukaj w sklepie</label>
+      <input id="qm" type="search" placeholder="Szukaj, np. bluza" autocomplete="off">
+    </div>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" aria-label="Menu" role="dialog" aria-modal="true">
+  <div class="drawer-top">
+    <a class="logo" href="#top" data-close><svg viewBox="0 0 32 24" aria-hidden="true"><polygon points="0,23 9,9 13,15 20,2 32,23"/></svg><span>GRAŃ</span></a>
+    <button class="icon-btn" data-close aria-label="Zamknij menu"><svg class="i"><use href="#i-x"/></svg></button>
+  </div>
+  <nav aria-label="Menu na telefonie">
+    <a href="#kolekcja" data-close>Nowości</a>
+    <a href="#szlaki" data-close>Szlaki</a>
+    <a href="#naprawa" data-close>Naprawa</a>
+    <a href="#szwalnia" data-close>Szwalnia</a>
+    <a href="#faq" data-close>Pytania</a>
+  </nav>
+  <a class="btn btn-primary t-btn" href="#klub" data-close>Dołącz do Klubu Grani</a>
+</div>
+
+<main id="tresc">
+  <span id="top"></span>
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="h1">
+    <div class="hero-media">
+      <picture>
+        <source media="(max-width: 639px)" srcset="img/hero-m.jpg">
+        <img src="img/hero.jpg" alt="Biegacz na trawiastej grani, w dole morze chmur" fetchpriority="high" width="2400" height="1602">
+      </picture>
+    </div>
+    <div class="hero-copy">
+      <div class="hero-title wrap">
+        <p class="eyebrow t-cap"><span class="marker" style="--c: var(--szlak-czerwony)"><i></i></span>Kolekcja jesień i zima 2026</p>
+        <h1 id="h1" class="t-display">Biegnij<br>granią</h1>
+      </div>
+      <div class="hero-rest wrap">
+        <p class="hero-sub t-body">Odzież do biegania i chodzenia po górach, szyta w Nowym Targu. Merino, które nie gryzie, i szwy, które naprawiamy za darmo przez 2&nbsp;lata.</p>
+        <a class="btn btn-primary t-btn" href="#kolekcja">Zobacz kolekcję</a>
+        <p class="proof t-cap"><span class="stars" aria-hidden="true">★★★★★</span><span>4,8/5 z 1&nbsp;263 opinii po zakupie</span></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="promises t-cap">
+    <ul class="wrap">
+      <li><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>Szyte w Nowym Targu</li>
+      <li><svg class="i" aria-hidden="true"><use href="#i-truck"/></svg>Wysyłka w 24&nbsp;h</li>
+      <li><svg class="i" aria-hidden="true"><use href="#i-return"/></svg>30 dni na zwrot</li>
+      <li><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg>2 lata darmowej naprawy</li>
+    </ul>
+  </div>
+
+  <!-- KOLEKCJA -->
+  <section class="section" id="kolekcja" aria-labelledby="h-kol">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="h-kol" class="t-h-xl">Nowości na sezon</h2>
+        <p class="t-cap mute" id="count" aria-live="polite"></p>
+      </div>
+      <div class="filters t-btn" role="group" aria-label="Filtruj produkty" id="filters"></div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <!-- HASŁO -->
+  <section class="tagline" id="szwalnia" aria-label="O szwalni">
+    <div class="wrap">
+      <p class="t-tagline" id="tagline">Szyjemy w Nowym Targu, dwadzieścia minut od pierwszego szlaku. Każdy szew sprawdzamy, zanim pójdzie w góry.</p>
+      <div class="facts t-cap mute">
+        <span><span class="marker" style="--c: var(--szlak-zielony)"><i></i></span>Szwalnia przy ul. Kolejowej</span>
+        <span>23 osoby przy maszynach</span>
+        <span>Od 2016 roku</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SZLAKI -->
+  <section class="section rv" id="szlaki" aria-labelledby="h-szl">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="h-szl" class="t-h-xl">Wybierz swój szlak</h2>
+        <p class="t-cap mute">Kolory jak na znakach PTTK. Każdy szlak to inny zestaw rzeczy.</p>
+      </div>
+      <div class="rail" id="rail"></div>
+    </div>
+  </section>
+
+  <!-- KORZYŚCI -->
+  <section class="section rv" aria-labelledby="h-plus">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="h-plus" class="t-h-xl">Kupujesz raz, nosisz latami</h2></div>
+      <div class="perks">
+        <article class="perk">
+          <img src="img/plus-naprawa.jpg" alt="Zielone koszulki na drewnianych wieszakach w szwalni" loading="lazy" width="720" height="900">
+          <div class="perk-copy">
+            <h3 class="t-h-lg">2 lata darmowej naprawy</h3>
+            <p class="t-body">Rozdarcie na kosówce, wypruty zamek, przetarty mankiet. Naprawiamy to w naszej szwalni.</p>
+            <a class="btn btn-on-image t-btn" href="#naprawa">Jak działa naprawa</a>
+          </div>
+        </article>
+        <article class="perk">
+          <img src="img/plus-wysylka.jpg" alt="Turystka z żółtym plecakiem w zielonej dolinie" loading="lazy" width="720" height="900">
+          <div class="perk-copy">
+            <h3 class="t-h-lg">Wysyłka w 24 h</h3>
+            <p class="t-body">Zamówisz do 14:00 w dzień roboczy, paczka wyjedzie z Nowego Targu jeszcze tego samego dnia.</p>
+            <a class="btn btn-on-image t-btn" href="#faq-dostawa" data-open="faq-dostawa">Koszty dostawy</a>
+          </div>
+        </article>
+        <article class="perk">
+          <img src="img/plus-klub.jpg" alt="Biegacze na starcie ulicznego biegu" loading="lazy" width="720" height="900">
+          <div class="perk-copy">
+            <h3 class="t-h-lg">Klub Grani</h3>
+            <p class="t-body">Wcześniejszy dostęp do krótkich serii i 10% rabatu na pierwsze zakupy.</p>
+            <a class="btn btn-on-image t-btn" href="#klub">Dołącz do klubu</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- NAPRAWA -->
+  <section class="section rv" id="naprawa" aria-labelledby="h-nap">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="h-nap" class="t-h-xl">Naprawa w trzech krokach</h2>
+        <p class="t-cap mute">Przez 2 lata od zakupu, bez względu na to, jak to się stało.</p>
+      </div>
+      <ol class="steps">
+        <li><span class="n" aria-hidden="true">1</span><div><h3 class="t-h-md">Zgłoś usterkę</h3><p class="t-body mute">Wypełnij krótki formularz i dodaj zdjęcie. Zajmuje to około dwóch minut.</p></div></li>
+        <li><span class="n" aria-hidden="true">2</span><div><h3 class="t-h-md">Nadaj paczkę</h3><p class="t-body mute">Dostajesz od nas etykietę InPost. Paczkę zostawiasz w dowolnym paczkomacie, płacimy za przesyłkę.</p></div></li>
+        <li><span class="n" aria-hidden="true">3</span><div><h3 class="t-h-md">Odbierz naprawione</h3><p class="t-body mute">Odsyłamy w ciągu 10 dni roboczych. Gdy naprawa się nie da, dostajesz nową sztukę.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- KAMPANIA NOCNA -->
+  <section class="campaign rv" aria-labelledby="h-noc">
+    <img src="img/noc.jpg" alt="Droga Mleczna nad ośnieżonym grzbietem górskim" loading="lazy" width="2400" height="1100">
+    <div class="campaign-copy wrap">
+      <div class="top">
+        <h2 id="h-noc" class="t-display">Wyjdź<br>przed świtem</h2>
+        <p class="t-body">Rzeczy na czarny szlak: ciepłe, ciche i z odblaskami na plecach.</p>
+      </div>
+      <div><button class="btn btn-on-image t-btn" data-trail="czarny">Zobacz rzeczy na noc</button></div>
+    </div>
+  </section>
+
+  <!-- OPINIE -->
+  <section class="section rv" aria-labelledby="h-op">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="h-op" class="t-h-xl">Co piszą po sezonie</h2>
+        <p class="proof t-cap"><span class="stars" aria-hidden="true">★★★★★</span>4,8/5 · 1&nbsp;263 opinie po zakupie</p>
+      </div>
+      <div class="reviews">
+        <figure class="review">
+          <blockquote class="t-body">Bluza Halny przeszła ze mną cały Główny Szlak Beskidzki, 500 km w 21 dni. Po praniu w 30 stopniach wygląda jak w dniu zakupu.</blockquote>
+          <figcaption><span class="t-body-strong">Agnieszka Wróbel</span><span class="t-cap mute">Bielsko-Biała · Bluza Halny</span></figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote class="t-body">Rozdarłem rękaw na kosówce pod Kozim Wierchem. Wysłałem w poniedziałek, w czwartek następnego tygodnia bluza była z powrotem. Łaty prawie nie widać.</blockquote>
+          <figcaption><span class="t-body-strong">Tomasz Kubiak</span><span class="t-cap mute">Kraków · Bluza Giewont</span></figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote class="t-body">Zamówiłam M i okazała się za duża. Wymiana bez pytań, nowa paczka przyszła po dwóch dniach. Koszulka nie śmierdzi nawet po trzech wybieganiach.</blockquote>
+          <figcaption><span class="t-body-strong">Ola Szczepańska</span><span class="t-cap mute">Łódź · Koszulka Kasprowy</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- KLUB -->
+  <section class="club rv" id="klub" aria-labelledby="h-klub">
+    <div class="wrap">
+      <div class="club-text">
+        <h2 id="h-klub" class="t-h-xl">Dołącz do Klubu Grani</h2>
+        <p class="t-body mute">Krótkie serie szyjemy w 60 do 120 sztukach. Członkowie klubu dostają wiadomość dzień przed premierą i kod na 10% na pierwsze zakupy. Piszemy najwyżej dwa razy w miesiącu.</p>
+      </div>
+      <form class="join" id="join" novalidate>
+        <label class="t-cap" for="email">Adres e-mail</label>
+        <div class="field-row">
+          <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="np. ola@poczta.pl" aria-describedby="emailErr">
+          <button class="btn btn-primary t-btn" type="submit" id="joinBtn">Zapisz mnie</button>
+        </div>
+        <p class="err t-cap" id="emailErr" hidden></p>
+        <label class="check t-cap mute"><input type="checkbox" id="consent" aria-describedby="consentErr"><span>Zgadzam się na wiadomości o nowościach. Wypiszesz się jednym kliknięciem w każdej wiadomości.</span></label>
+        <p class="err t-cap" id="consentErr" hidden>Zaznacz zgodę, żebyśmy mogli wysłać kod.</p>
+        <p class="ok-msg t-body-strong" id="joinOk" hidden role="status"><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span></span></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section rv" id="faq" aria-labelledby="h-faq">
+    <div class="wrap faq-wrap">
+      <div class="faq-aside">
+        <h2 id="h-faq" class="t-h-xl">Pytania przed zakupem</h2>
+        <p class="t-body mute">Nie ma tu odpowiedzi? Napisz do nas, odpisujemy w dni robocze do 16:00.</p>
+        <p class="copy-row t-body"><code id="mail">sklep@gran-szwalnia.pl</code><button class="link-btn t-cap" id="copyMail" type="button">Kopiuj adres</button></p>
+      </div>
+      <div class="faq">
+        <details id="faq-rozmiar"><summary class="t-h-md">Jak dobrać rozmiar?<svg class="i" aria-hidden="true"><use href="#i-down"/></svg></summary>
+          <div class="ans t-body"><p>Zmierz obwód klatki piersiowej pod pachami. Do 92 cm wybierz S, 92 do 100 cm M, 100 do 108 cm L, 108 do 116 cm XL. Bluzy z merino są krojone luźniej, koszulki bliżej ciała. Pierwsza wymiana rozmiaru jest bezpłatna.</p></div></details>
+        <details id="faq-dostawa"><summary class="t-h-md">Ile kosztuje i jak długo trwa dostawa?<svg class="i" aria-hidden="true"><use href="#i-down"/></svg></summary>
+          <div class="ans t-body"><p>Paczkomat InPost kosztuje 14,99 zł, kurier 18,99 zł. Od 299 zł dostawa jest darmowa. Zamówienia złożone do 14:00 w dzień roboczy wysyłamy tego samego dnia, zwykle docierają następnego.</p></div></details>
+        <details id="faq-naprawa"><summary class="t-h-md">Co obejmuje darmowa naprawa?<svg class="i" aria-hidden="true"><use href="#i-down"/></svg></summary>
+          <div class="ans t-body"><p>Rozdarcia, przetarcia, zamki, ściągacze i szwy, przez 2 lata od zakupu. Nie pytamy, jak to się stało. Po dwóch latach naprawiamy dalej, za cenę materiału.</p></div></details>
+        <details id="faq-zwrot"><summary class="t-h-md">Czy mogę zwrócić zakup?<svg class="i" aria-hidden="true"><use href="#i-down"/></svg></summary>
+          <div class="ans t-body"><p>Tak, masz 30 dni od odbioru paczki. Rzecz nie może nosić śladów użytkowania w terenie. Pieniądze oddajemy w ciągu 5 dni roboczych od otrzymania zwrotu.</p></div></details>
+        <details id="faq-material"><summary class="t-h-md">Z czego szyjecie?<svg class="i" aria-hidden="true"><use href="#i-down"/></svg></summary>
+          <div class="ans t-body"><p>Wełna merino z certyfikatem RWS, bawełna organiczna GOTS i dzianiny pętelkowe z polskich zakładów. Gramaturę każdej rzeczy podajemy przy produkcie, żeby było wiadomo, na jaką pogodę jest.</p></div></details>
+        <details id="faq-pranie"><summary class="t-h-md">Jak prać merino?<svg class="i" aria-hidden="true"><use href="#i-down"/></svg></summary>
+          <div class="ans t-body"><p>W 30 stopniach, programem do wełny, bez płynu zmiękczającego. Susz na płasko. Merino rzadko trzeba prać, zwykle wystarczy przewietrzyć je przez noc.</p></div></details>
+        <details id="sklep"><summary class="t-h-md">Czy mogę przymierzyć na miejscu?<svg class="i" aria-hidden="true"><use href="#i-down"/></svg></summary>
+          <div class="ans t-body"><p>Tak, sklep jest w budynku szwalni przy ul. Kolejowej 14 w Nowym Targu. Otwarte od poniedziałku do piątku 9:00 do 17:00, w soboty 9:00 do 13:00. Zamówienie z odbiorem osobistym jest gotowe po 2 godzinach.</p></div></details>
+        <details id="faq-kluby"><summary class="t-h-md">Szyjecie dla klubów biegowych i firm?<svg class="i" aria-hidden="true"><use href="#i-down"/></svg></summary>
+          <div class="ans t-body"><p>Tak, od 20 sztuk jednego modelu. Haftujemy logo na miejscu, termin to zwykle 3 do 4 tygodni. Napisz, ile sztuk potrzebujesz i na kiedy.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- KOŃCOWE WEZWANIE -->
+  <section class="final rv" aria-labelledby="h-final">
+    <div class="wrap">
+      <h2 id="h-final" class="t-h-xl">Jesień w Tatrach trwa krótko. Krótkie serie też.</h2>
+      <p class="t-body mute">Gdy rozmiar się skończy, kolejna seria będzie dopiero wiosną.</p>
+      <a class="btn btn-primary t-btn" href="#kolekcja">Zobacz kolekcję</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-cols t-cap">
+      <div><h2 class="t-body-strong">Sklep</h2><ul>
+        <li><a href="#kolekcja" data-type="all">Nowości</a></li>
+        <li><a href="#kolekcja" data-type="bluzy">Bluzy</a></li>
+        <li><a href="#kolekcja" data-type="czapki">Czapki</a></li>
+        <li><a href="#kolekcja" data-type="akcesoria">Akcesoria</a></li></ul></div>
+      <div><h2 class="t-body-strong">Pomoc</h2><ul>
+        <li><a href="#faq-dostawa" data-open="faq-dostawa">Dostawa</a></li>
+        <li><a href="#faq-zwrot" data-open="faq-zwrot">Zwroty</a></li>
+        <li><a href="#naprawa">Naprawa</a></li>
+        <li><a href="#faq-rozmiar" data-open="faq-rozmiar">Tabela rozmiarów</a></li></ul></div>
+      <div><h2 class="t-body-strong">Szwalnia</h2><ul>
+        <li><a href="#szwalnia">O nas</a></li>
+        <li><a href="#sklep" data-open="sklep">Sklep w Nowym Targu</a></li>
+        <li><a href="#faq-kluby" data-open="faq-kluby">Dla klubów i firm</a></li></ul></div>
+      <div><h2 class="t-body-strong">Klub Grani</h2><ul>
+        <li><a href="#klub">Dołącz</a></li>
+        <li><a href="#szlaki">Szlaki</a></li></ul></div>
+    </div>
+    <div class="fine t-util">
+      <span>© 2026 Grań · Firma fikcyjna, projekt do portfolio · Zdjęcia: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></span>
+      <nav aria-label="Informacje prawne">
+        <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+        <a href="polityka-prywatnosci.html#regulamin">Regulamin</a>
+        <button class="link-btn t-util" id="cookieOpen" type="button">Ustawienia cookies</button>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<!-- Koszyk -->
+<div class="overlay" id="overlay"></div>
+<aside class="bag" id="bag" aria-label="Koszyk" role="dialog" aria-modal="true">
+  <div class="bag-head">
+    <h2 class="t-h-lg">Koszyk</h2>
+    <button class="icon-btn" id="bagClose" aria-label="Zamknij koszyk"><svg class="i"><use href="#i-x"/></svg></button>
+  </div>
+  <div id="bagBody" style="display:flex;flex-direction:column;flex:1;min-height:0"></div>
+</aside>
+
+<div class="toast t-btn-sm" id="toast" role="status" aria-live="polite"></div>
+
+<div class="cookies t-cap" id="cookies" hidden role="region" aria-label="Pliki cookie">
+  <p>Cookies są potrzebne do działania koszyka. Statystyki włączymy tylko za Twoją zgodą.</p>
+  <div class="row">
+    <button class="btn btn-primary t-btn-sm" data-cookie="all">Zgadzam się</button>
+    <button class="btn btn-secondary t-btn-sm" data-cookie="min">Tylko niezbędne</button>
+  </div>
+</div>
+
+<script>
+(() => {
+  const $ = (s, r = document) => r.querySelector(s);
+  const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+  const zl = n => n.toLocaleString('pl-PL', { minimumFractionDigits: Number.isInteger(n) ? 0 : 2, maximumFractionDigits: 2 }) + ' zł';
+  const store = {
+    get(k, d) { try { const v = localStorage.getItem('gran:' + k); return v ? JSON.parse(v) : d; } catch { return d; } },
+    set(k, v) { try { localStorage.setItem('gran:' + k, JSON.stringify(v)); } catch {} }
+  };
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- Dane ---------- */
+  const TYPES = { all: 'Wszystko', bluzy: 'Bluzy', koszulki: 'Koszulki i spodnie', czapki: 'Czapki', akcesoria: 'Akcesoria' };
+  const TRAILS = {
+    czerwony:  { name: 'Bieg po grani',        sub: 'Lekko i szybko, na długie wybiegania', img: 'szlak-czerwony', alt: 'Sylwetka biegaczki na tle zachodzącego słońca' },
+    niebieski: { name: 'Zima i wiatr',         sub: 'Warstwy na halny i pierwszy śnieg',     img: 'szlak-niebieski', alt: 'Ośnieżone szczyty pod pochmurnym niebem' },
+    zielony:   { name: 'Na co dzień',          sub: 'Z miasta prosto na szlak',              img: 'szlak-zielony',  alt: 'Biegacz na polnej drodze wśród łąk' },
+    zolty:     { name: 'Wyprawy wielodniowe',  sub: 'Rzeczy, które mieszczą się w plecaku',  img: 'szlak-zolty',    alt: 'Dwoje turystów z plecakami na kamienistej ścieżce' },
+    czarny:    { name: 'Przed świtem',         sub: 'Ciepło i odblaski na nocne wyjścia',    img: 'szlak-czarny',   alt: 'Szczyty nad morzem chmur o świcie' }
+  };
+  const PRODUCTS = [
+    { id: 'halny',    name: 'Bluza Halny',        sub: 'Bluza z kapturem, merino 260 g/m²',     price: 349, type: 'bluzy',     trails: ['niebieski','zolty','czarny'], badge: 'Nowość', alt: 'Szara bluza z kapturem noszona w górach', sw: [['Szary kamień','#9A9D99'],['Świerk','#2F4A3C'],['Czerń','#17251E']] },
+    { id: 'kasprowy', name: 'Koszulka Kasprowy',  sub: 'Koszulka biegowa, merino 150 g/m²',     price: 149, type: 'koszulki',  trails: ['czerwony','zielony'], alt: 'Biała koszulka z krótkim rękawem', sw: [['Wapień','#F4F2EC'],['Świerk','#2F4A3C'],['Czerwień szlaku','#C3301B']] },
+    { id: 'rysy',     name: 'Czapka Rysy',        sub: 'Czapka z daszkiem, bawełna sprana',     price: 99, sale: 79, type: 'czapki', trails: ['niebieski','zielony'], alt: 'Grafitowa czapka z daszkiem', sw: [['Grafit','#55585A'],['Piasek','#C9BFA9']] },
+    { id: 'morskie',  name: 'Butelka Morskie',    sub: 'Butelka stalowa, 0,75 l',                price: 89, type: 'akcesoria', trails: ['czerwony','zolty'], badge: 'Krótka seria', alt: 'Zielona butelka stalowa', sw: [['Kosówka','#5E8A6B'],['Czerń','#17251E'],['Wapień','#E9E4D6']] },
+    { id: 'gerlach',  name: 'Plecak Gerlach 22',  sub: 'Plecak 22 l, tkanina wodoodporna',      price: 389, type: 'akcesoria', trails: ['zolty','czarny'], alt: 'Granatowy plecak miejski', sw: [['Granat','#1E2A3E'],['Czerń','#17251E']] },
+    { id: 'giewont',  name: 'Bluza Giewont',      sub: 'Bluza bez kaptura, bawełna organiczna', price: 279, sale: 223, type: 'bluzy', trails: ['niebieski','zielony'], alt: 'Biała bluza bez kaptura ułożona na płasko', sw: [['Wapień','#F4F2EC'],['Szary kamień','#9A9D99'],['Świerk','#2F4A3C']] },
+    { id: 'dolina',   name: 'Spodnie Dolina',     sub: 'Spodnie dresowe, pętelka 340 g/m²',     price: 259, type: 'koszulki',  trails: ['czerwony','zielony'], badge: 'Nowość', alt: 'Niebieskoszare spodnie dresowe z kieszenią', sw: [['Lodowiec','#6E8E9A'],['Czerń','#17251E']] },
+    { id: 'siklawa',  name: 'Czapka Siklawa',     sub: 'Czapka z siatką, szybkoschnąca',        price: 109, type: 'czapki',    trails: ['czerwony','czarny'], alt: 'Biała czapka z siatką z tyłu', sw: [['Wapień','#F4F2EC'],['Czerń','#17251E']] }
+  ];
+  const byId = Object.fromEntries(PRODUCTS.map(p => [p.id, p]));
+
+  /* ---------- Stan ---------- */
+  const state = { type: 'all', trail: null, q: '' };
+  let favs = new Set(store.get('favs', []));
+  let bag = store.get('bag', []).filter(i => byId[i.id]);
+
+  /* ---------- Filtry ---------- */
+  const filtersEl = $('#filters');
+  function renderFilters() {
+    let html = Object.entries(TYPES).map(([k, v]) =>
+      `<button class="chip" type="button" data-type="${k}" aria-pressed="${state.type === k}">${v}</button>`).join('');
+    if (state.trail) {
+      html += `<button class="chip" type="button" data-clear-trail aria-pressed="true" aria-label="Usuń filtr szlaku: ${TRAILS[state.trail].name}"><span class="marker" style="--c: var(--szlak-${state.trail})"><i></i></span>${TRAILS[state.trail].name}<svg class="i"><use href="#i-x"/></svg></button>`;
+    }
+    filtersEl.innerHTML = html;
+  }
+  filtersEl.addEventListener('click', e => {
+    const b = e.target.closest('button'); if (!b) return;
+    if (b.dataset.type) state.type = b.dataset.type;
+    if ('clearTrail' in b.dataset) state.trail = null;
+    update();
+  });
+
+  /* ---------- Siatka produktów ---------- */
+  const gridEl = $('#grid');
+  function priceHtml(p) {
+    if (!p.sale) return `<p class="price t-body-strong">${zl(p.price)}</p>`;
+    const off = Math.round((1 - p.sale / p.price) * 100);
+    return `<p class="price t-body-strong"><span class="now-sale">${zl(p.sale)}</span><s>${zl(p.price)}</s><span class="off">${off}% taniej</span></p>`;
+  }
+  function cardHtml(p) {
+    return `<article class="card">
+      <div class="card-img">
+        <img src="img/p-${p.id}.jpg" alt="${p.alt}" loading="lazy" width="800" height="800">
+        ${p.badge ? `<span class="badge t-cap-sm">${p.badge}</span>` : ''}
+        <button class="icon-btn fav" type="button" data-fav="${p.id}" aria-pressed="${favs.has(p.id)}" aria-label="Dodaj do ulubionych: ${p.name}"><svg class="i"><use href="#i-heart"/></svg></button>
+        <button class="icon-btn add" type="button" data-add="${p.id}" aria-label="Dodaj do koszyka: ${p.name}"><svg class="i"><use href="#i-plus"/></svg></button>
+      </div>
+      <div class="card-meta">
+        <div class="swatches" role="group" aria-label="Kolory: ${p.name}">
+          ${p.sw.map(([n, c], i) => `<button class="swatch" type="button" style="--c:${c}" aria-label="${n}" title="${n}" aria-pressed="${i === 0}"></button>`).join('')}
+        </div>
+        <h3 class="t-body-strong">${p.name}</h3>
+        <p class="t-cap mute">${p.sub} · ${p.sw.length} ${p.sw.length > 4 ? 'kolorów' : 'kolory'}</p>
+        ${priceHtml(p)}
+      </div>
+    </article>`;
+  }
+  function visible() {
+    const q = state.q.trim().toLowerCase();
+    return PRODUCTS.filter(p =>
+      (state.type === 'all' || p.type === state.type) &&
+      (!state.trail || p.trails.includes(state.trail)) &&
+      (!q || (p.name + ' ' + p.sub + ' ' + TYPES[p.type]).toLowerCase().includes(q)));
+  }
+  function renderGrid() {
+    const list = visible();
+    const n = list.length;
+    $('#count').textContent = n === 1 ? '1 produkt' : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) ? `${n} produkty` : `${n} produktów`;
+    if (!n) {
+      const what = state.q ? `„${state.q.trim()}”` : 'tych filtrów';
+      gridEl.innerHTML = `<div class="empty"><h3 class="t-h-lg">Nic nie pasuje do ${what.replace(/</g, '&lt;')}</h3><p class="t-body mute">Spróbuj szerszego hasła, np. „bluza” albo „merino”, lub pokaż całą kolekcję.</p><button class="btn btn-secondary t-btn" type="button" data-reset>Pokaż całą kolekcję</button></div>`;
+      return;
+    }
+    gridEl.innerHTML = list.map(cardHtml).join('');
+    $$('.card-img img', gridEl).forEach(img => {
+      const done = () => { img.classList.add('ok'); img.parentElement.classList.add('loaded'); };
+      img.complete && img.naturalWidth ? done() : img.addEventListener('load', done, { once: true });
+      img.addEventListener('error', () => img.parentElement.classList.add('loaded'), { once: true });
+    });
+  }
+  gridEl.addEventListener('click', e => {
+    const fav = e.target.closest('[data-fav]');
+    const add = e.target.closest('[data-add]');
+    const sw = e.target.closest('.swatch');
+    if (e.target.closest('[data-reset]')) { state.type = 'all'; state.trail = null; setQuery(''); update(); return; }
+    if (fav) {
+      const id = fav.dataset.fav;
+      favs.has(id) ? favs.delete(id) : favs.add(id);
+      fav.setAttribute('aria-pressed', favs.has(id));
+      store.set('favs', [...favs]); renderCounts();
+      toast(favs.has(id) ? `Dodano do ulubionych: ${byId[id].name}` : `Usunięto z ulubionych: ${byId[id].name}`);
+    }
+    if (add) { addToBag(add.dataset.add); }
+    if (sw) { $$('.swatch', sw.parentElement).forEach(s => s.setAttribute('aria-pressed', s === sw)); }
+  });
+  function update() { renderFilters(); renderGrid(); }
+
+  /* ---------- Wyszukiwarka ---------- */
+  const qInputs = [$('#q'), $('#qm')];
+  function setQuery(v) { state.q = v; qInputs.forEach(i => { if (i.value !== v) i.value = v; }); }
+  qInputs.forEach(inp => {
+    inp.addEventListener('input', () => { setQuery(inp.value); renderGrid(); });
+    inp.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); $('#kolekcja').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' }); } });
+  });
+  $('#searchBtn').addEventListener('click', () => {
+    const box = $('#mSearch'); const open = box.classList.toggle('open');
+    $('#searchBtn').setAttribute('aria-expanded', open);
+    if (open) $('#qm').focus();
+  });
+
+  /* ---------- Szlaki ---------- */
+  $('#rail').innerHTML = Object.entries(TRAILS).map(([k, t]) => `
+    <article class="trail">
+      <div class="trail-img">
+        <img src="img/${t.img}.jpg" alt="${t.alt}" loading="lazy" width="720" height="900">
+        <span class="marker" style="--c: var(--szlak-${k})" title="Szlak ${k}"><i></i></span>
+        <button class="btn btn-on-image t-btn" type="button" data-trail="${k}">Zobacz rzeczy</button>
+      </div>
+      <div><h3 class="t-body-strong">${t.name}</h3><p class="t-cap mute">${t.sub}</p></div>
+    </article>`).join('');
+  document.addEventListener('click', e => {
+    const t = e.target.closest('[data-trail]');
+    if (t) { state.trail = t.dataset.trail; state.type = 'all'; setQuery(''); update(); $('#kolekcja').scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' }); }
+    const ft = e.target.closest('footer [data-type]');
+    if (ft) { state.type = ft.dataset.type; state.trail = null; setQuery(''); update(); }
+    const op = e.target.closest('[data-open]');
+    if (op) { const d = document.getElementById(op.dataset.open); if (d) d.open = true; }
+  });
+
+  /* ---------- Koszyk ---------- */
+  const FREE = 299, SHIP = 14.99;
+  const unit = p => p.sale || p.price;
+  function addToBag(id) {
+    const it = bag.find(i => i.id === id);
+    it ? it.qty++ : bag.push({ id, qty: 1 });
+    saveBag(); toast(`Dodano do koszyka: ${byId[id].name}`);
+  }
+  function saveBag() { store.set('bag', bag); renderCounts(); renderBag(); }
+  function renderCounts() {
+    const n = bag.reduce((s, i) => s + i.qty, 0);
+    const bc = $('#bagCount'); bc.textContent = n; bc.hidden = !n;
+    $('#bagBtn').setAttribute('aria-label', `Koszyk: ${n} ${n === 1 ? 'produkt' : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) ? 'produkty' : 'produktów'}`);
+    const fc = $('#favCount'); fc.textContent = favs.size; fc.hidden = !favs.size;
+    $('#favBtn').setAttribute('aria-label', `Ulubione: ${favs.size}`);
+  }
+  function renderBag() {
+    const body = $('#bagBody');
+    if (!bag.length) {
+      body.innerHTML = `<div class="bag-empty"><p class="t-h-md">Koszyk jest pusty</p><p class="t-body mute">Zacznij od nowości na sezon. Od 299 zł dostawa jest darmowa.</p><a class="btn btn-primary t-btn" href="#kolekcja" data-bag-close>Zobacz kolekcję</a></div>`;
+      return;
+    }
+    const sum = bag.reduce((s, i) => s + unit(byId[i.id]) * i.qty, 0);
+    const missing = Math.max(0, FREE - sum);
+    body.innerHTML = `<ul class="bag-list">${bag.map(i => { const p = byId[i.id]; return `
+      <li class="bag-item">
+        <div class="thumb"><img src="img/p-${p.id}.jpg" alt=""></div>
+        <div><p class="t-body-strong">${p.name}</p><p class="t-cap mute">${p.sub}</p>
+          <div class="qty"><button type="button" data-dec="${p.id}" aria-label="Zmniejsz liczbę: ${p.name}">−</button><span class="t-cap" aria-live="polite">${i.qty}</span><button type="button" data-inc="${p.id}" aria-label="Zwiększ liczbę: ${p.name}">+</button></div></div>
+        <p class="t-body-strong" style="font-variant-numeric:tabular-nums">${zl(unit(p) * i.qty)}</p>
+      </li>`; }).join('')}</ul>
+      <div class="bag-foot">
+        <p class="t-cap ${missing ? 'mute' : ''}" style="${missing ? '' : 'color:var(--success)'}">${missing ? `Do darmowej dostawy brakuje ${zl(missing)}` : 'Masz darmową dostawę'}</p>
+        <div class="bar" aria-hidden="true"><i style="transform:scaleX(${Math.min(1, sum / FREE)})"></i></div>
+        <div class="bag-row t-body"><span>Produkty</span><span>${zl(sum)}</span></div>
+        <div class="bag-row t-body"><span>Dostawa (paczkomat)</span><span>${missing ? zl(SHIP) : '0 zł'}</span></div>
+        <div class="bag-row t-h-lg"><span>Razem</span><span>${zl(sum + (missing ? SHIP : 0))}</span></div>
+        <button class="btn btn-primary t-btn" type="button" disabled aria-describedby="demoNote">Przejdź do kasy</button>
+        <p class="t-cap-sm mute" id="demoNote">To sklep demonstracyjny, składanie zamówień jest wyłączone.</p>
+      </div>`;
+  }
+  $('#bagBody').addEventListener('click', e => {
+    const inc = e.target.closest('[data-inc]'), dec = e.target.closest('[data-dec]');
+    if (inc) { bag.find(i => i.id === inc.dataset.inc).qty++; saveBag(); }
+    if (dec) { const it = bag.find(i => i.id === dec.dataset.dec); it.qty--; if (!it.qty) bag = bag.filter(i => i !== it); saveBag(); }
+    if (e.target.closest('[data-bag-close]')) closeBag();
+  });
+  let lastFocus = null;
+  function openBag() { lastFocus = document.activeElement; renderBag(); $('#bag').classList.add('open'); $('#overlay').classList.add('open'); $('#bagBtn').setAttribute('aria-expanded', 'true'); setTimeout(() => $('#bagClose').focus(), 50); }
+  function closeBag() { $('#bag').classList.remove('open'); $('#overlay').classList.remove('open'); $('#bagBtn').setAttribute('aria-expanded', 'false'); lastFocus && lastFocus.focus && lastFocus.focus(); }
+  $('#bagBtn').addEventListener('click', openBag);
+  $('#bagClose').addEventListener('click', closeBag);
+  $('#overlay').addEventListener('click', closeBag);
+  $('#favBtn').addEventListener('click', () => {
+    if (!favs.size) { toast('Nie masz jeszcze ulubionych. Kliknij serce przy produkcie.'); return; }
+    toast('Ulubione: ' + [...favs].map(id => byId[id].name).join(', '));
+  });
+
+  /* ---------- Menu na telefonie ---------- */
+  const drawer = $('#drawer'), menuBtn = $('#menuBtn');
+  function setDrawer(open) {
+    drawer.classList.toggle('open', open); menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.setAttribute('aria-label', open ? 'Zamknij menu' : 'Otwórz menu');
+    document.body.style.overflow = open ? 'hidden' : '';
+    if (open) setTimeout(() => $('[data-close].icon-btn', drawer).focus(), 50); else menuBtn.focus({ preventScroll: true });
+  }
+  menuBtn.addEventListener('click', () => setDrawer(!drawer.classList.contains('open')));
+  $$('[data-close]', drawer).forEach(el => el.addEventListener('click', () => setDrawer(false)));
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') { if (drawer.classList.contains('open')) setDrawer(false); if ($('#bag').classList.contains('open')) closeBag(); } });
+
+  /* ---------- Toast ---------- */
+  let tt;
+  function toast(msg) { const t = $('#toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(tt); tt = setTimeout(() => t.classList.remove('show'), 2600); }
+
+  /* ---------- Formularz klubu ---------- */
+  $('#join').addEventListener('submit', e => {
+    e.preventDefault();
+    const email = $('#email'), err = $('#emailErr'), c = $('#consent'), cErr = $('#consentErr');
+    const v = email.value.trim();
+    let ok = true;
+    if (!v) { err.textContent = 'Wpisz adres e-mail.'; ok = false; }
+    else if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)) { err.textContent = 'Ten adres wygląda na niepełny. Sprawdź, czy ma znak @ i domenę, np. ola@poczta.pl.'; ok = false; }
+    err.hidden = ok; email.setAttribute('aria-invalid', !ok);
+    cErr.hidden = c.checked; if (!c.checked) ok = false;
+    if (!ok) { (!err.hidden ? email : c).focus(); return; }
+    const btn = $('#joinBtn'); btn.disabled = true; btn.textContent = 'Zapisuję';
+    setTimeout(() => {
+      btn.disabled = false; btn.textContent = 'Zapisz mnie';
+      $('#joinOk span').textContent = `Zapisano ${v}. Kod na 10% wyślemy na ten adres.`;
+      $('#joinOk').hidden = false; e.target.reset();
+    }, 700);
+  });
+  $('#email').addEventListener('input', () => { if (!$('#emailErr').hidden) { $('#emailErr').hidden = true; $('#email').setAttribute('aria-invalid', 'false'); } });
+  $('#consent').addEventListener('change', () => { if ($('#consent').checked) $('#consentErr').hidden = true; });
+
+  /* ---------- Kopiowanie adresu ---------- */
+  $('#copyMail').addEventListener('click', () => {
+    const txt = $('#mail').textContent;
+    const fallback = () => { const r = document.createRange(); r.selectNodeContents($('#mail')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); toast('Adres zaznaczony. Skopiuj go skrótem klawiszowym.'); };
+    try { navigator.clipboard.writeText(txt).then(() => toast('Skopiowano adres: ' + txt), fallback); } catch { fallback(); }
+  });
+
+  /* ---------- Cookies ---------- */
+  const cookies = $('#cookies');
+  if (!store.get('cookies', null)) cookies.hidden = false;
+  $$('[data-cookie]', cookies).forEach(b => b.addEventListener('click', () => { store.set('cookies', b.dataset.cookie); cookies.hidden = true; toast(b.dataset.cookie === 'all' ? 'Zapisano: wszystkie pliki cookie' : 'Zapisano: tylko niezbędne pliki cookie'); }));
+  $('#cookieOpen').addEventListener('click', () => { cookies.hidden = false; $('button', cookies).focus(); });
+
+  /* ---------- Aktywny link w menu ---------- */
+  const spyLinks = $$('[data-spy]');
+  const spy = new IntersectionObserver(entries => {
+    entries.forEach(en => { if (en.isIntersecting) spyLinks.forEach(a => a.setAttribute('aria-current', a.dataset.spy === en.target.id ? 'true' : 'false')); });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  spyLinks.forEach(a => { const s = document.getElementById(a.dataset.spy); s && spy.observe(s); });
+
+  /* ---------- Pojawianie się sekcji ---------- */
+  if (!reduce && 'IntersectionObserver' in window) {
+    const rv = new IntersectionObserver(entries => entries.forEach(en => { if (en.isIntersecting) { en.target.classList.remove('pre'); rv.unobserve(en.target); } }), { rootMargin: '0px 0px -8% 0px' });
+    $$('.rv').forEach(el => { if (el.getBoundingClientRect().top > innerHeight) { el.classList.add('pre'); rv.observe(el); } });
+  }
+
+  /* ---------- Hasło słowo po słowie ---------- */
+  const tag = $('#tagline');
+  tag.innerHTML = tag.textContent.trim().split(/\s+/).map(w => `<span class="w">${w}</span>`).join(' ');
+  const words = $$('.w', tag);
+  if (reduce) words.forEach(w => w.classList.add('on'));
+  else {
+    let ticking = false;
+    const paint = () => {
+      const line = innerHeight * 0.7;
+      words.forEach(w => w.classList.toggle('on', w.getBoundingClientRect().top < line));
+      ticking = false;
+    };
+    addEventListener('scroll', () => { if (!ticking) { ticking = true; requestAnimationFrame(paint); } }, { passive: true });
+    paint();
+  }
+
+  update(); renderCounts(); renderBag();
+})();
+</script>
+</body>
+</html>
